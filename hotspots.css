@@ -1,0 +1,108 @@
+/* Estilos personalizados para hotspots */
+.hotspot-nav {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    background-image: url('normal 1.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.hotspot-nav:hover {
+    transform: scale(1.1) !important;
+    filter: brightness(1.2) !important;
+}
+
+.hotspot-nav::before {
+    content: '' !important;
+}
+
+/* Variações para hotspots normais */
+.hotspot-nav.normal-1 {
+    background-image: url('normal 1.png') !important;
+}
+
+.hotspot-nav.normal-2 {
+    background-image: url('normal 2.png') !important;
+}
+
+.hotspot-door {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 8px !important;
+    width: 45px !important;
+    height: 45px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    background-image: url('porta 1.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.hotspot-door:hover {
+    transform: scale(1.1) !important;
+    filter: brightness(1.2) !important;
+}
+
+.hotspot-door::before {
+    content: '' !important;
+}
+
+/* Variações para hotspots de porta */
+.hotspot-door.porta-1 {
+    background-image: url('porta 1.png') !important;
+}
+
+.hotspot-door.porta-2 {
+    background-image: url('porta 2.png') !important;
+}
+
+.hotspot-back {
+    background: rgba(107, 114, 128, 0.9) !important;
+    border: 3px solid #6b7280 !important;
+    border-radius: 50% !important;
+    width: 35px !important;
+    height: 35px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+    box-shadow: 0 2px 8px rgba(107, 114, 128, 0.4) !important;
+}
+
+.hotspot-back:hover {
+    background: rgba(107, 114, 128, 1) !important;
+    box-shadow: 0 4px 12px rgba(107, 114, 128, 0.6) !important;
+}
+
+.hotspot-back::before {
+    content: '←' !important;
+}
+
+/* Responsividade para hotspots */
+@media (max-width: 768px) {
+    .hotspot-nav,
+    .hotspot-door {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    
+    .hotspot-back {
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 14px !important;
+    }
+}
